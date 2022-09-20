@@ -2,6 +2,9 @@ import { Config } from '@stencil/core';
 import { sass } from '@stencil/sass';
 export const config: Config = {
   namespace: 'stripe-elements',
+  extras: {
+    experimentalImportInjection: true
+  },
   outputTargets: [
     {
       type: 'dist',
